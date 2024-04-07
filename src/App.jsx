@@ -7,7 +7,7 @@ function App() {
   const [weatherImage, setWeatherImage] = useState("");
 
   function getWeather() {
-    const apiKey = import.meta.env.VITE_API_KEY;
+    const apiKey = import.meta.env.WEATHER_API_KEY;
     const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
     fetch(url)
