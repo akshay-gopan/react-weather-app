@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { IoSearch } from "react-icons/io5";
 
 function App() {
   const [city, setCity] = useState("");
@@ -7,7 +8,7 @@ function App() {
   const [weatherImage, setWeatherImage] = useState("");
 
   function getWeather() {
-    const apiKey = import.meta.env.WEATHER_API_KEY;
+    const apiKey = import.meta.env.VITE_API_KEY;
     const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
     fetch(url)
@@ -59,6 +60,7 @@ function App() {
   }
 
   return (
+    <div className="component">
     <div className="card">
       <div className="search">
         <input
@@ -67,7 +69,7 @@ function App() {
           value={city}
           onChange={(e) => setCity(e.target.value)}
         />
-        <button onClick={getWeather}>Search</button>
+        <button onClick={getWeather}><IoSearch size={27}/></button>
       </div>
       {weatherInfo && (
         <div className=" row">
@@ -96,6 +98,7 @@ function App() {
           </div>
         </div>
       )}
+    </div>
     </div>
   );
 }
