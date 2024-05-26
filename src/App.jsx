@@ -34,28 +34,33 @@ function App() {
 
   function getImage(type) {
     if (type == "Clear") {
-      return "./src/assets/images/clear.png";
+      // return "./src/assets/images/clear.png";
+      return "/images/clear.png"
     }
     if (type == "Clouds") {
-      return "./src/assets/images/clouds.png";
+      // return "./src/assets/images/clouds.png";
+      return "/images/clouds.png"
     }
     if (type == "Drizzle") {
-      return "./src/assets/images/drizzle.png";
+      // return "./src/assets/images/drizzle.png";
+      return "/images/drizzle.png"
     }
     if (type == "Humidity") {
-      return "./src/assets/images/humidity.png";
+      // return "./src/assets/images/humidity.png";
+      return "/images/humidity.png"
     }
     if (type == "Mist" || "Haze") {
-      return "./src/assets/images/mist.png";
+      // return "./src/assets/images/mist.png";
+      
     }
     if (type == "Rain") {
-      return "./src/assets/images/rain.png";
+      // return "./src/assets/images/rain.png";
     }
     if (type == "Snow") {
-      return "./src/assets/images/snow.png";
+      // return "./src/assets/images/snow.png";
     }
     if (type == "Wind") {
-      return "./src/assets/images/wind.png";
+      // return "./src/assets/images/wind.png";
     }
   }
 
