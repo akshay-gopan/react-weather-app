@@ -51,16 +51,19 @@ function App() {
     }
     if (type == "Mist" || "Haze") {
       // return "./src/assets/images/mist.png";
-      
+      return "/images/mist.png"
     }
     if (type == "Rain") {
       // return "./src/assets/images/rain.png";
+      return "/images/rain.png"
     }
     if (type == "Snow") {
       // return "./src/assets/images/snow.png";
+      return "/images/snow.png"
     }
     if (type == "Wind") {
       // return "./src/assets/images/wind.png";
+      return "/images/wind.png"
     }
   }
 
